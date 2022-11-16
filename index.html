@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="full p2">
+        <form class="col w40 p2 m2" onsubmit="event.preventDefault(),submitted(this)">
+            <table class="full" style="border: none;">
+                <tr>
+                    <td style="border: none;">Product Id</td>
+                    <td><input type="text" class="full" name="id"></td>
+                </tr>
+                <tr>
+                    <td style="border: none;">Product Name</td>
+                    <td><input type="text" class="full" name="name"></td>
+                </tr>
+                <tr>
+                    <td style="border: none;">Product Price</td>
+                    <td><input type="text" class="full" name="price"></td>
+                </tr>
+                <tr>
+                    <td style="border: none;">Product Quantity</td>
+                    <td><input type="number" class="full" name="quantity"></td>
+                </tr>
+            </table>
+
+            <button class="p2 m4 line" type="submit">ADD PRODUCT</button>
+        </form>
+        <table class="tbl2 full">
+            <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
